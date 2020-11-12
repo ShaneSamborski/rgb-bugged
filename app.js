@@ -71,7 +71,7 @@ function setupSquares(){
 				scoreDisplay.textContent = score;
 				sessionStorage.setItem('score', score);
 			} else {
-				this.style.background = "#232323";
+				this.style.display = "none";
 				messageDisplay.textContent = "Try Again"
 				score--;
 				scoreDisplay.textContent = score; 
