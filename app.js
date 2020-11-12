@@ -25,7 +25,7 @@ Initialize the beginning setup of the game
 function init(){
 	setupModeButtons();
 	setupSquares();
-	var lsScore = sessionStorage.getItem('score');
+	var lsScore = Number(sessionStorage.getItem('score'));
 	if( lsScore !== null ){
 		score = lsScore; 
 		scoreDisplay.textContent = score;
